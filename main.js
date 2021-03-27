@@ -12,5 +12,21 @@ window.addEventListener("load", function(){
 	loader.className += " hidden";
 })
 
-const counter = document.querySelectorAll('.counter');
-const speed = 200;
+window.addEventListener('scroll', ()=>{
+	if(window.pageYOffset > 500){
+		console.log('yleo');
+		const counter = document.querySelector('.counter');
+		let count = 1;
+			setInterval( ()=>{
+				if(count < 500){
+					count++;
+					counter.innerHTML = count;
+				}
+			} , 10)
+	}
+})
+
+
+
+
+
