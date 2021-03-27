@@ -5,6 +5,7 @@
     font-family: jaba;
 }
 
+$secondcolor : rgb(31, 32, 32);
 @import "header";
 
 @font-face {
@@ -18,6 +19,11 @@
 
 @import "carousel";
 
+
 .dropdown-menu {
     margin-top: 1rem !important;
+}
+
+.costum-background {
+    background-color: $secondcolor
 }
