@@ -4,6 +4,7 @@
 }
 
 #scrollpath {
+    z-index: 1000;
     position: fixed;
     top: 0px;
     left: 0px;
@@ -13,7 +14,7 @@
 }
 
 #progressbar {
-    z-index: 100;
+    z-index: 1000;
     position: fixed;
     top: 70px;
     right: 0;
