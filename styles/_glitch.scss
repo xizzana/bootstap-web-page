@@ -1,6 +1,6 @@
 .glitch {
     color: white;
-    font-size: 20px;
+    font-size: 30px;
     position: relative;
     margin: 0 auto;
 }
@@ -20,14 +20,15 @@
 }
 
 .glitch::after {
-    content: attr(data-text);
+    content: "COREPRESS";
     position: absolute;
-    left: 2px;
+    left: -2px;
     text-shadow: -1px 0 red;
     top: 0;
     color: white;
-    background: black;
-    animation: noise-anim 2s infinite linear alternate-reverse;
+    background: $header;
+    overflow: hidden;
+    animation: noise-anim 3s infinite linear alternate-reverse;
 }
 
 @keyframes noise-anim-2 {
@@ -45,13 +46,13 @@
 }
 
 .glitch::before {
-    content: attr(data-text);
+    content: "COREPRESS";
     position: absolute;
-    left: -2px;
+    left: 2px;
     text-shadow: 1px 0 blue;
     top: 0;
     color: white;
-    background: black;
+    background: $header;
     overflow: hidden;
     animation: noise-anim-2 15s infinite linear alternate-reverse;
 }

@@ -5,6 +5,10 @@
     font-family: jaba;
 }
 
+body {
+    height: 1000px;
+}
+
 @import "header";
 
 @font-face {
@@ -12,6 +16,8 @@
     src: url("/fonts/Prototype.ttf");
 }
 
+@import "loader";
+@import "progress";
 @import "glitch";
 
 @import "carousel";
