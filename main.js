@@ -12,3 +12,5 @@ window.addEventListener("load", function(){
 	loader.className += " hidden";
 })
 
+const counter = document.querySelectorAll('.counter');
+const speed = 200;
