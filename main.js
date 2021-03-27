@@ -16,7 +16,7 @@ for(var i = 0; i < counter.length; i++) {
 		if(window.pageYOffset > 500){
 			let count = 1;
 				setInterval( ()=>{
-					if(count < 500){
+					if(count < 1200){
 						count++;
 						counter[0].innerHTML = count;
 					}

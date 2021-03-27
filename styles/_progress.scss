@@ -13,9 +13,8 @@
 }
 
 #progressbar {
-    z-index: 1000;
+    z-index: 10000;
     position: fixed;
-    top: 60px;
     right: 0;
     width: 10px;
     background: linear-gradient(#e66465, #9198e5);
