@@ -27,3 +27,26 @@ $secondcolor : rgb(31, 32, 32);
 .costum-background {
     background-color: $secondcolor
 }
+
+.soc-icons {
+    .a {
+        &:first-child {
+            i {
+                padding: 20px 25px;
+            }
+        }
+
+        &:hover {
+            i {}
+        }
+    }
+
+    i {
+        padding: 20px;
+        border: 2px solid white;
+        border-radius: 50%;
+        overflow: hidden;
+        cursor: pointer;
+        margin: 20px 0px;
+    }
+}

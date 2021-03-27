@@ -29,9 +29,9 @@
     <div id="scrollpath"></div>
     <!-- header -->
     <div class="container-fluid align-items-center sticky-top costum-header">
-        <div class="container px-lg-5 px-sm-0">
+        <div class="container">
             <div class="row">
-                <nav class="navbar navbar-expand-sm navbar-light align-items-center">
+                <nav class="navbar navbar-expand-sm navbar-dark align-items-center">
                     <a class="navbar-brand col-md-3" href="index.html">
                         <div class="glitch" data-text="GLITCH">CORPRESS</div>
                     </a>
@@ -42,10 +42,16 @@
                     </button>
                     <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                         <ul class="navbar-nav col-md-8 justify-content-between">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#carouselExampleIndicators">HOME</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#pages">ABOUT</a>
+                            </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#carouselExampleIndicators"
                                     id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    HOME
+                                    links
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
                                     <li><a class="dropdown-item" href="#">Action</a></li>
@@ -57,7 +63,7 @@
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button"
+                                <a class="nav-link dropdown-toggle" href="#pages" id="navbarDropdown1" role="button"
                                     data-bs-toggle="dropdown" aria-expanded="false">
                                     PAGES
                                 </a>
@@ -69,9 +75,6 @@
                                     </li>
                                     <li><a class="dropdown-item" href="#">Something else here</a></li>
                                 </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Link</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#"><i class="fa fa-search"></i></a>
@@ -128,14 +131,14 @@
                         dolor aspernatur voluptate praesentium a dicta blanditiis, numquam eius.</p>
                 </div>
                 <div class="col-md-3 align-content-center justify-content-around">
-                    <button class="btn btn-lg btn-success">Tell More</button>
+                    <button class="btn btn-lg btn-outline-light active">Tell More</button>
                     <button class="btn btn-lg btn-outline-light">Purchase Now</button>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="container-fluid costum-background text-white">
+    <div class="container-fluid costum-background text-white" id="pages">
         <div class="container py-5">
             <h2 class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing.</h2>
             <p class="text-center w-75 mx-auto mt-5" style="font-size:23px">MADE BY PROFESSIONALS, WITH CARE
@@ -144,14 +147,17 @@
                 EACH PIECE HAS ITS
                 PLACE — FOR A REASON. ALL
                 STARTS WITH A NEED:</p>
-            <div class="row d-flex justify-content-around text-center">
+            <div class="row d-flex justify-content-around text-center soc-icons">
                 <div class="col-md-3 a">
+                    <i class="fa fa-facebook"></i>
                     <p>20</p>
                 </div>
                 <div class="col-md-3 a">
+                    <i class="fa fa-youtube"></i>
                     <p>200</p>
                 </div>
                 <div class="col-md-3 a">
+                    <i class="fa fa-google"></i>
                     <p>400</p>
                 </div>
             </div>
