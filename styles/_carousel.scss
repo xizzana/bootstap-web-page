@@ -1,0 +1,19 @@
+.costum-jaba {
+    max-height: 70vh;
+    overflow: hidden;
+
+    &:hover button {
+        visibility: visible !important;
+    }
+
+    .costum-indicators {
+
+        button {
+            visibility: hidden;
+            background-color: rgb(202, 180, 180) !important;
+            padding: 1vh !important;
+            border-radius: 50%;
+        }
+    }
+
+}

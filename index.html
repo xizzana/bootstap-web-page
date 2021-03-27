@@ -16,11 +16,13 @@
 
 <body>
     <!-- header -->
-    <div class="container-fluid py-2 align-items-center">
+    <div class="container-fluid py-2 align-items-center sticky-top costum-header">
         <div class="container px-lg-5 px-md-2">
             <div class="row">
                 <nav class="navbar navbar-expand-sm navbar-light align-items-center">
-                    <a class="navbar-brand col-md-4" href="#"><img src="images/logo.png" alt="1"></a>
+                    <a class="navbar-brand col-md-4" href="#">
+                        <div class="glitch" data-text="GLITCH">GLITCH</div>
+                    </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -68,6 +70,39 @@
             </div>
         </div>
     </div>
+    <!-- carousel-->
+    <div id="carouselExampleIndicators" class="carousel slide costum-jaba" data-bs-ride="carousel">
+        <div class="carousel-indicators costum-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner  jaba">
+            <div class="carousel-item active">
+                <img src="images/bg.gif" class="w-100" alt="gif">
+            </div>
+            <div class="carousel-item">
+                <img src="images/bg1.jpg" class="w-100" alt="gif">
+            </div>
+            <div class="carousel-item">
+                <img src="images/bg3.gif" class="w-100" alt="gif">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span aria-hidden="true"> <i class="fas fa-caret-left fa-5x"></i> </span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span aria-hidden="true"> <i class="fas fa-caret-right fa-5x"> </i></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
         integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
         crossorigin="anonymous"></script>

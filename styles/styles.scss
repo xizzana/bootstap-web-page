@@ -5,7 +5,13 @@
     font-family: jaba;
 }
 
+@import "header";
+
 @font-face {
     font-family: jaba;
     src: url("/fonts/Prototype.ttf");
 }
+
+@import "glitch";
+
+@import "carousel";
