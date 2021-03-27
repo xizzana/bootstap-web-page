@@ -13,8 +13,9 @@ $secondcolor : rgb(31, 32, 32);
     src: url("/fonts/Prototype.ttf");
 }
 
-@import "loader";
 @import "progress";
+@import "loader";
+
 @import "glitch";
 
 @import "carousel";
