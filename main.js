@@ -1,5 +1,5 @@
 var progress = document.getElementById('progressbar');
-var totalwidth = window.innerHeight;
+var totalwidth = document.body.scrollHeight - window.innerHeight;
 window.onscroll = function(){
 	var progressheight = (window.pageYOffset / totalwidth) * 100;
 	progress.style.width = progressheight + "%";
