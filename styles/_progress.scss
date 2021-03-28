@@ -1,26 +1,27 @@
 ::-webkit-scrollbar {
-    width: 0;
+    width: 0px;
+    overflow: hidden;
 }
 
 #scrollpath {
     position: fixed;
     top: 0px;
-    right: 0px;
-    height: 100%;
+    width: 100%;
     background: rgba(255, 255, 255, 0.05);
-    z-index: 1000;
-    width: 10px;
+    height: 10px;
+}
+
+#scrollpath,
+#progressbar {
+    z-index: 10000;
 }
 
 #progressbar {
-    z-index: 10000;
     position: fixed;
-    right: 0;
-    width: 10px;
+    top: 0;
+    height: 10px;
     background: linear-gradient(#e66465, #9198e5);
     animation: animate 5s linear infinite;
-    border-bottom-left-radius: 40px;
-    border-bottom-right-radius: 40px;
 }
 
 @keyframes animate {
@@ -54,3 +55,5 @@
     background: linear-gradient(#e66465, #9198e5);
     filter: blur(30px);
 }
+
+;
