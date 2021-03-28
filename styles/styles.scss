@@ -5,6 +5,10 @@
     font-family: jaba;
 }
 
+html {
+    scroll-behavior: unset !important;
+}
+
 $secondcolor : rgb(31, 32, 32);
 
 body {
@@ -53,4 +57,12 @@ body {
         overflow: hidden;
         cursor: pointer;
     }
+}
+
+.anim ul li.active a {
+    color: red !important;
+}
+
+.anim ul li a.active {
+    color: green !important;
 }
