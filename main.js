@@ -1,10 +1,3 @@
-var progress = document.getElementById('progressbar');
-var totalwidth = document.body.scrollHeight - window.innerHeight;
-window.onscroll = function(){
-	var progressheight = (window.pageYOffset / totalwidth) * 100;
-	progress.style.width = progressheight + "%";
-}
-
 window.addEventListener("load", function(){
 	var loader = document.querySelector(".centerdiv")
 	loader.className += " hidden";
@@ -59,5 +52,11 @@ function openCity(evt, cityName) {
 
 
 
+  var progress = document.getElementById('progressbar');
+var totalwidth = document.body.scrollHeight - window.innerHeight;
+window.onscroll = function(){
+	var progressheight = (window.pageYOffset / totalwidth) * 100;
+	progress.style.width = progressheight + "%";
+}
 
 
