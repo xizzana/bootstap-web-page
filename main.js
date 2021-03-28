@@ -1,7 +1,7 @@
 window.addEventListener("load", function(){
 	var loader = document.querySelector(".centerdiv")
 	loader.className += " hidden";
-})
+});
 
 var counter = document.querySelectorAll(".counter");
 for(var i = 0; i < counter.length; i++) {
@@ -31,7 +31,7 @@ for(var i = 0; i < counter.length; i++) {
 
 	});
 
-}
+};
 
 function openCity(evt, cityName) {
 	var i, tabcontent, tablinks;
@@ -45,7 +45,7 @@ function openCity(evt, cityName) {
 	}
 	document.getElementById(cityName).style.display = "block";
 	evt.currentTarget.className += " active";
-  }
+  };
   
   // Get the element with id="defaultOpen" and click on it
   document.getElementById("defaultOpen").click();
@@ -57,6 +57,6 @@ var totalwidth = document.body.scrollHeight - window.innerHeight;
 window.onscroll = function(){
 	var progressheight = (window.pageYOffset / totalwidth) * 100;
 	progress.style.width = progressheight + "%";
-}
+};
 
 
