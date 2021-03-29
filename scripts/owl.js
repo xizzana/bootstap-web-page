@@ -16,15 +16,15 @@
 // })
 $('.owl-carousel').owlCarousel({
     loop:true,
-    margin:1,
     responsiveClass:true,
+    items: 1,
     responsive:{
         0:{
             items:1,
             nav:true
         },
         600:{
-            items:3,
+            items:2,
             nav:false
         },
         1000:{

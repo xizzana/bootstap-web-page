@@ -1,6 +1,7 @@
 window.addEventListener("load", function(){
 	var loader = document.querySelector(".centerdiv")
 	loader.className += " hidden";
+	changecolor.style.display = "block";
 });
 
 var counter = document.querySelectorAll(".counter");
@@ -50,6 +51,27 @@ function openCity(evt, cityName) {
   // Get the element with id="defaultOpen" and click on it
   document.getElementById("defaultOpen").click();
 
+  var colorchangerbtn = document.querySelector('#focus i');
+  var changecolor = document.getElementById("focus");
+  colorchangerbtn.addEventListener('click', function(){
+	  changecolor.classList.toggle("active");
+  })
+
+  // change color 
+function red(){
+	console.log('red');
+	document.querySelector('body').className = "red";
+}
+function blue(){
+console.log('blue');
+document.querySelector('body').className = "blue";
+
+}
+function lblue(){
+	console.log('lblue');
+	document.querySelector('body').className = "lblue";
+
+}
 
 
   var progress = document.getElementById('progressbar');
