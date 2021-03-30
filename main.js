@@ -7,28 +7,28 @@ window.addEventListener("load", function(){
 var counter = document.querySelectorAll(".counter");
 for(var i = 0; i < counter.length; i++) {
 	window.addEventListener('scroll', ()=>{
-		if(window.pageYOffset > 500){
+		if(window.pageYOffset == 600){
 			let count = 1;
 				setInterval( ()=>{
-					if(count < 1200){
+					if(count < 600){
 						count++;
 						counter[0].innerHTML = count;
 					}
 				} , 50)
 
 				setInterval( function(){
-					if(count < 1300){
+					if(count < 500){
 						count++;
 						counter[1].innerHTML = count;
 					}
 				} , 10)
 				setInterval( function(){
-					if(count < 1300){
+					if(count < 650){
 						count++;
 						counter[2].innerHTML = count;
 					}
 				} , 10)
-		} return;
+		}
 
 	});
 
