@@ -73,6 +73,24 @@ function lblue(){
 
 }
 
+// backtop
+
+var back = document.getElementById('scrolltop');
+window.addEventListener('scroll', ()=>{
+	if(pageYOffset > 1000){
+		back.classList.add('active');
+	}else{
+		back.classList.remove('active');
+	}
+})
+
+	back.addEventListener('click', ()=>{
+		window.scroll({
+			top: 0,
+			behavior: 'smooth'
+		})
+	})
+
 
   var progress = document.getElementById('progressbar');
 var totalwidth = document.body.scrollHeight - window.innerHeight;
