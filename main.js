@@ -7,7 +7,7 @@ window.addEventListener("load", function(){
 var counter = document.querySelectorAll(".counter");
 for(var i = 0; i < counter.length; i++) {
 	window.addEventListener('scroll', ()=>{
-		if(window.pageYOffset == 600){
+		if(600 < window.pageYOffset < 600){
 			let count = 1;
 				setInterval( ()=>{
 					if(count < 600){
